@@ -1,0 +1,21 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+i {
+  font-size: calc(20 / 14.4 * 1vw);
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  color: #919eab;
+}
+
+body.light {
+  background-color: #ffffff;
+  color: #212b36;
+}
+body.dark {
+  background-color: #15141b;
+  color: #c4cdd5;
+}

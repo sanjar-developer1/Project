@@ -1,0 +1,69 @@
+.product-wrapper {
+  display: flex;
+  flex-direction: column;
+  margin-top: calc(28 / 14.4 * 1vw);
+  margin-left: calc(28 / 14.4 * 1vw);
+}
+
+.product-top p {
+  width: calc(458 / 14.4 * 1vw);
+  font-family: Poppins;
+  font-weight: 400;
+  font-style: Regular;
+  font-size: calc(14 / 14.4 * 1vw);
+  line-height: calc(20 / 14.4 * 1vw);
+  letter-spacing: 0%;
+  color: #637381;
+}
+.product-top h2 {
+  font-family: Poppins;
+  font-weight: 600;
+  font-style: SemiBold;
+  font-size: calc(18 / 14.4 * 1vw);
+  line-height: 24px;
+  letter-spacing: 0%;
+}
+
+.product-center {
+  margin-top: calc(28 / 14.4 * 1vw);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  overflow: scroll;
+}
+
+.product-center::-webkit-scrollbar {
+  display: none;
+}
+
+.product-center p {
+  font-family: Poppins;
+  font-weight: 400;
+  font-style: Regular;
+  font-size: calc(14 / 14.4 * 1vw);
+  line-height: 100%;
+  letter-spacing: 0%;
+  background-color: #f3f5f7;
+  color: #637381;
+  padding: calc(6 / 14.4 * 1vw) calc(12 / 14.4 * 1vw);
+  border-radius: calc(20 / 14.4 * 1vw);
+}
+
+.light .product-center p.active {
+  background-color: #212b36;
+  color: #ffffff;
+}
+
+.dark .product-center p.active {
+  background-color: #f3f5f7;
+  color: #212b36;
+}
+
+/* prduct stylelar boshlandi adashmaslik uchun */
+
+.product-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: calc(28 / 14.4 * 1vw);
+  margin-top: calc(28 / 14.4 * 1vw);
+}
