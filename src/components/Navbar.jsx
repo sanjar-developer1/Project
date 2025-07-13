@@ -1,16 +1,27 @@
 import { useTheme } from "../context/ThemeContext";
 import "./styles/navbar.css";
 
-function Navbar() {
+function Navbar({ allProducts, setProducts }) {
   const { theme, toggleTheme } = useTheme();
 
-  return (
-    //  <div className="logo">MySite</div>
+  const handleSearch = (e) => {
+    const value = e.target.value.toLowerCase();
+    const filtered = allProducts.filter((item) =>
+      item.title.toLowerCase().includes(value)
+    );
+    setProducts(filtered);
+  };
 
+  return (
     <nav className="navbar">
       <div className="navbar-search">
         <i className="fa fa-search"></i>
-        <input type="text" placeholder="Search" className="search-input" />
+        <input
+          type="text"
+          placeholder="Search"
+          className="search-input"
+          onChange={handleSearch}
+        />
       </div>
 
       <div className="navbar-moon">
