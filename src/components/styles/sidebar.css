@@ -1,6 +1,5 @@
 .sidebar {
   width: calc(260 / 14.4 * 1vw);
-  transition: width 0.3s ease;
   min-height: 100vh;
   display: flex;
   align-items: left;
@@ -29,23 +28,23 @@
 }
 
 .toggle {
-  font-size: 20px;
+  font-size: calc(20 / 14.4 * 1vw);
   cursor: pointer;
 }
 
 .sidebar-menu {
   list-style: none;
   padding: 0;
-  margin-top: 40px;
+  margin-top: calc(40 / 14.4 * 1vw);
   display: flex;
   flex-direction: column;
-  gap: 20px;
+  gap: calc(20 / 14.4 * 1vw);
 }
 
 .menu-item {
   display: flex;
   align-items: center;
-  gap: 12px;
-  font-size: 16px;
+  gap: calc(12 / 14.4 * 1vw);
+  font-size: calc(16 / 14.4 * 1vw);
   cursor: pointer;
 }

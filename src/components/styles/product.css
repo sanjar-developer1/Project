@@ -20,7 +20,7 @@
   font-weight: 600;
   font-style: SemiBold;
   font-size: calc(18 / 14.4 * 1vw);
-  line-height: 24px;
+  line-height: calc(24 / 14.4 * 1vw);
   letter-spacing: 0%;
 }
 
@@ -29,11 +29,7 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  overflow: scroll;
-}
-
-.product-center::-webkit-scrollbar {
-  display: none;
+  gap: calc(16 / 14.4 * 1vw);
 }
 
 .product-center p {
@@ -45,7 +41,7 @@
   letter-spacing: 0%;
   background-color: #f3f5f7;
   color: #637381;
-  padding: calc(6 / 14.4 * 1vw) calc(12 / 14.4 * 1vw);
+  padding: calc(6 / 14.4 * 1vw) calc(10 / 14.4 * 1vw);
   border-radius: calc(20 / 14.4 * 1vw);
 }
 
@@ -66,4 +62,92 @@
   flex-wrap: wrap;
   gap: calc(28 / 14.4 * 1vw);
   margin-top: calc(28 / 14.4 * 1vw);
+}
+
+.product-item {
+  display: flex;
+  flex-direction: column;
+  align-items: left;
+  justify-content: center;
+  width: calc(350 / 14.4 * 1vw);
+}
+
+.product-item {
+  box-shadow: 0 calc(4 / 14.4 * 1vw) calc(12 / 14.4 * 1vw) rgba(0, 0, 0, 0.1);
+  border-radius: calc(8 / 14.4 * 1vw);
+  padding: calc(16 / 14.4 * 1vw);
+  background-color: #fff;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.product-title {
+  font-family: Poppins;
+  font-weight: 600;
+  font-style: SemiBold;
+  font-size: calc(14 / 14.4 * 1vw);
+  line-height: 20px;
+  letter-spacing: 0%;
+}
+
+.product-count,
+.product-rate {
+  font-family: Poppins;
+  font-weight: 400;
+  font-style: Regular;
+  font-size: calc(12 / 14.4 * 1vw);
+  line-height: 18px;
+  letter-spacing: 0%;
+}
+
+.count {
+  display: flex;
+  align-items: center;
+  justify-content: left;
+  gap: calc(8 / 14.4 * 1vw);
+}
+
+.price-row span {
+  font-family: Poppins;
+  font-weight: 400;
+  font-style: Regular;
+  font-size: calc(14 / 14.4 * 1vw);
+  line-height: calc(20 / 14.4 * 1vw);
+  letter-spacing: 0%;
+  text-decoration: line-through;
+}
+
+/* hover */
+
+.product-item {
+  position: relative;
+  background-color: #fff;
+  padding: 16px;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+}
+
+.icon-button {
+  position: absolute;
+  top: 12px;
+  right: 12px;
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  background: white;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
+  border: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #ff4d4f;
+  font-size: 16px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.icon-button:hover {
+  background: #ff4d4f;
+  color: white;
+  transform: scale(1.1);
 }
